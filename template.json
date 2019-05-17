@@ -1,0 +1,31 @@
+{
+  "m3u8": {
+    "local": "iptv.m3u8",
+    "remote": "https://raw.githubusercontent.com/notanewbie/My-Legalstream/master/notanewbie-legalstream.m3u8"
+  },
+  "serverPort": 1234,
+  "serverHost": "0.0.0.0",
+  "serverName": "PlexIPTV",
+  "tunerCount": 1,
+  "deviceId": "001002003",
+  "serialNumber": "0123456789",
+  "removeIfNotFoundOnFilter": true,
+  "doNotPullRemotePlaylist": false,
+  "limit": -1,
+  "filter": [
+    {
+      "name": ">>> US News",
+      "channel": "1"
+    },
+    {
+      "name": "^AMC$",
+      "meta": "I254\\.59337\\.schedulesdirect\\.org",
+      "channel": "2"
+    },
+    {
+      "meta": "I254\\.59337\\.schedulesdirect\\.org",
+      "rename": "AMC",
+      "channel": "3"
+    }
+  ]
+}
